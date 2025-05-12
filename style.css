@@ -1,0 +1,52 @@
+body { 
+    margin: 0; /* Remove the default margin */
+    background-image: linear-gradient(to left,#3F5EFB,#9653B8,#FC466B);
+}
+
+#image-row { 
+    /* Use flexbox to arrange the images in a row */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+img { 
+    /* Prevent images from exceeding the width of their parent */
+    max-width: 100%;
+    height: auto;
+    transition: filter 2s ;
+}
+
+#click-me {
+    /* Centre the button */
+    display: block;
+    margin: auto;
+
+    /* Style the button to look nice */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+img:hover {
+    filter: grayscale(100%) blur(4px);
+}
+ 
+/* Buttons will normally be blue, but will change to red when hovered */
+button {
+  background-color: dodgerblue;
+}
+ 
+#click-me:hover {
+  background-color: red;
+    transition: ease-in 5ms;
+  bottom:20px;
+}
